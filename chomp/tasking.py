@@ -18,7 +18,7 @@ class Tasking():
     REQUEUE_STATE = "chomp-queue"
 
     def __init__(self):
-        self.client = Client(url_base="http://staffing.tryhabitat.com/api/v2/", key="eyJhbGciOiJIUzI1NiJ9.eyJpZCI6Nywia2V5IjoiOWY3N2FhN2UyNjM1N2E2Mjc0MjljMGI1MjkyZjI4YmIzZGI1ZmQ4NyJ9.lE0l3Y1Q7iOpJ7J8jcOh-jWQuWzqYesEubq6lxCg2K0", env=config.ENV)
+        self.client = Client(url_base="http://staffing.tryhabitat.com/api/v2/", key=config.STAFFJOY_API_KEY, env=config.ENV)
         self.default_tz = pytz.timezone(config.DEFAULT_TZ)
 
         # To be defined later
